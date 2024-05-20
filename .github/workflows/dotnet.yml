@@ -21,16 +21,12 @@ jobs:
         uses: mockoon/cli-action@v1
         with:
           version: '6.0.1'
-          data-file: 'https://raw.githubusercontent.com/conekta/openapi/main/mocks/conekta_api.json'
+          data-file: 'https://raw.githubusercontent.com/digitalfemsa/openapi/main/mocks/femsa.json'
           port: 3000
       - name: Execute dotnet
         run: dotnet build
-      - name: Test and publish code coverage
-        uses: paambaati/codeclimate-action@v5.0.0
+      - name: Test
+        run: dotnet test ./src/DigitalFemsa.net.Test/DigitalFemsa.net.Test.csproj --no-build -p:CollectCoverage=true -p:CoverletOutputFormat=lcov
         env:
-          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
           BASE_PATH: http://localhost:3000
-        with:
-          coverageCommand: dotnet test ./src/Conekta.net.Test/Conekta.net.Test.csproj --no-build -p:CollectCoverage=true -p:CoverletOutputFormat=lcov -p:CoverletOutput=coverage/
-          coverageLocations: |
-            ${{github.workspace}}/src/Conekta.net.Test/coverage/coverage.net6.0.info:lcov
+          

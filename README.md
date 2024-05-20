@@ -1,4 +1,3 @@
-![NET api](https://github.com/digitalfemsa/digitalfemsa-.net/blob/master/readme_cover.png?raw=true)
 # DigitalFemsa .NET API Library
 [![nuget](https://img.shields.io/nuget/v/DigitalFemsa.net.svg)](https://www.nuget.org/packages/DigitalFemsa.net/) [![nuget](https://img.shields.io/nuget/dt/DigitalFemsa.net.svg)](https://www.nuget.org/packages/DigitalFemsa.net/)[![dotnet CI](https://github.com/digitalfemsa/digitalfemsa-.net/actions/workflows/dotnet.yml/badge.svg)](https://github.com/digitalfemsa/digitalfemsa-.net/actions/workflows/dotnet.yml) 
 
