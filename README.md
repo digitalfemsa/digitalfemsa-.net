@@ -7,13 +7,13 @@ The library supports all APIs under the following services:
 
 | API                                                                  | Description | Service Name | Supported version |
 |----------------------------------------------------------------------| ----------- |-------|-------------------|
-| [Payments API](https://developers.digitalfemsa.com/v2.1.0/reference) | Our classic integration for online payments. Current supported version | Payments API | **v2.1.0**        |
+| [Payments API](https://developers.digitalfemsa.io/reference) | Our classic integration for online payments. Current supported version | Payments API | **v2.1.0**        |
 
-For more information, refer to our [documentation](https://developers.digitalfemsa.com/v2.1.0/docs).
+For more information, refer to our [documentation](https://developers.digitalfemsa.io/docs).
 
 ## Prerequisites
-- [DigitalFemsa account](https://panel.digitalfemsa.com/)
-- [API key](https://developers.digitalfemsa.com/v2.1.0/docs/como-obtener-tus-api-keys).  your API credential .
+- [DigitalFemsa account](https://panel.digitalfemsa.io/)
+- [API key](https://developers.digitalfemsa.io/docs/como-obtener-tus-api-keys).  your API credential .
 - DigitalFemsa dotnet API Library supports .net standard 2.0 and above
 
 ## Installation
@@ -89,10 +89,10 @@ Have a look at our [contributing guidelines](https://github.com/digitalfemsa/dig
 ## Support
 If you have a feature request, or spotted a bug or a technical problem, [create an issue here](https://github.com/digitalfemsa/digitalfemsa-.net/issues/choose).
 
-For other questions, [contact our Support Team](https://developers.digitalfemsa.com/discuss).
+For other questions, [contact our Support Team](https://developers.digitalfemsa.io/discuss).
 
 ## Licence
 This repository is available under the [MIT license](https://github.com/digitalfemsa/digitalfemsa-.net/blob/master/LICENSE).
 
 ## See also
-* [DigitalFemsa docs](https://developers.digitalfemsa.com/v2.1.0/docs)
+* [DigitalFemsa docs](https://developers.digitalfemsa.io/docs)
