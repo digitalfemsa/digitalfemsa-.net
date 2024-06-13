@@ -74,44 +74,6 @@ OrderRequest orderRequest = new OrderRequest(
 OrderResponse response = ordersApi.CreateOrder(orderRequest, acceptLanguage);
 ```
 
-## Catching exception
-
-### Example
-```csharp
-using System.Collections.Generic;
-using System.Diagnostics;
-using DigitalFemsa.net.Api;
-using DigitalFemsa.net.Client;
-using DigitalFemsa.net.Model;
-
-namespace Example
-{
-    public class CreatePlanExample
-    {
-        public static void Main()
-        {
-            Configuration config = new Configuration( AccessToken = "Your merchant XAPI key");
-
-            var apiInstance = new PlansApi(config);
-            var planRequest = new PlanRequest(); // PlanRequest | requested field for plan
-            var acceptLanguage = "es";  // string | Use for knowing which language to use (optional)  (default to es)
-
-            try
-            {
-                // Create Plan
-                PlanResponse result = apiInstance.CreatePlan(planRequest, acceptLanguage);
-                Debug.WriteLine(result);
-            }
-            catch (ApiException  e)
-            {
-                Debug.Print("Exception when calling PlansApi.CreatePlan: " + e.Message);
-                Debug.Print("Status Code: " + e.ErrorCode);
-                Debug.Print(e.StackTrace);
-            }
-        }
-    }
-}
-```
 
 ## Running the tests
 Navigate to digitalfemsa-.net folder and run the following commands.
